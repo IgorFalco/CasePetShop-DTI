@@ -1,0 +1,10 @@
+{
+    "name": "casedti-petshop",
+    "version": "1.0.0",
+    "scripts": {
+        "install": "cd frontend && npm install && cd ../backend && npm install",
+        "start": "npm run startFront && npm run startBack",
+        "startFront": "cd frontend && npm start",
+        "startBack": "cd backend && npm start"
+    }
+}
