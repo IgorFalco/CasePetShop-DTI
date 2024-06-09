@@ -1,0 +1,49 @@
+{
+  "petshops": [
+    {
+      "name": "Meu Canino Feliz",
+      "distance": 2.0,
+      "usefulDay": false,
+      "prices": {
+        "weekdays": {
+          "small": 20.0,
+          "large": 40.0
+        },
+        "weekends": {
+          "small": 24.0,
+          "large": 48.0
+        }
+      }
+    },
+    {
+      "name": "Vai Rex",
+      "distance": 1.7,
+      "usefulDay": true,
+      "prices": {
+        "weekdays": {
+          "small": 15.0,
+          "large": 50.0
+        },
+        "weekends": {
+          "small": 20.0,
+          "large": 55.0
+        }
+      }
+    },
+    {
+      "name": "ChowChawgas",
+      "distance": 0.8,
+      "usefulDay": false,
+      "prices": {
+        "weekdays": {
+          "small": 30.0,
+          "large": 45.0
+        },
+        "weekends": {
+          "small": 30.0,
+          "large": 45.0
+        }
+      }
+    }
+  ]
+}
