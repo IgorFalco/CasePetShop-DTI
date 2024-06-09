@@ -23,18 +23,18 @@ export default class petShopController {
 
         try {
 
-            const { date, numSmallDogs, numBigDogs } = req.query;
+            const { date, numSmallDogs, numBigDogs } = req.body;
 
             if (!date || !numSmallDogs || !numBigDogs) {
 
-                throw new appError(`Parâmetros "date", "numSmallDogs" e "numBigDogs" são obrigatórios`, 400)
+                throw new appError(`Parâmetros "date", "numSmallDogs" e "numBigDogs" são obrigatórios`, 400);
             }
 
             const numSmallDogsInt = parseInt(numSmallDogs);
             const numBigDogsInt = parseInt(numBigDogs);
 
             if (isNaN(numSmallDogsInt) || isNaN(numBigDogsInt)) {
-                throw new appError(`"numSmallDogs" e "numBigDogs" devem ser números válidos`, 400)
+                throw new appError(`"numSmallDogs" e "numBigDogs" devem ser números válidos`, 400);
             }
 
             const petshop = new petShop();
