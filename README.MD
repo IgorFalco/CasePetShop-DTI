@@ -42,5 +42,3 @@ Este projeto consiste em uma aplicação web para encontrar o melhor petshop com
 Igor Falco
 
 ---
-
-Certifique-se de personalizar as instruções e a descrição do projeto conforme necessário. Essas instruções ajudarão os desenvolvedores a iniciar e entender o projeto com facilidade.
