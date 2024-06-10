@@ -52,6 +52,11 @@ export default class petShop {
             const petshops = this.getAll();
             const prices = []
 
+
+            if (numSmallDogs < 0 || numBigDogs < 0) {
+                throw new appError("Não é possível números menores que 0!", 400);
+            }
+
             for (const petshop of petshops) {
 
                 const price = await this.getPrice(petshop, date, numSmallDogs, numBigDogs)
@@ -64,6 +69,8 @@ export default class petShop {
             if (validPrices.length === 0) {
                 throw new appError("Não há preços válidos disponíveis!", 404);
             }
+
+            
 
             // Encontrar o petshop com o menor preço e menor distância em caso de empate
             const bestPetShop = validPrices.reduce((prev, curr) => {

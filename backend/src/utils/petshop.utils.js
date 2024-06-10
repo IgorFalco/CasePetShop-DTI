@@ -4,7 +4,6 @@ import axios from 'axios'
 import dotenv from 'dotenv'
 import { appError } from '../errors/appError.js';
 import fs from 'fs'
-import path from 'path'
 
 dotenv.config();
 

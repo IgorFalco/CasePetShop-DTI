@@ -8,6 +8,7 @@ function App() {
 
   const handleSubmit = async (formData) => {
     try {
+      setMelhorPetShop(null); // Limpa o estado antes de enviar uma nova requisição
       const response = await axios.post('http://localhost:8080/calculate', formData);
       console.log(response.data);
       setMelhorPetShop(response.data); // Atualiza o estado com a resposta do servidor
@@ -16,9 +17,13 @@ function App() {
     }
   };
 
+  const handleClear = () => {
+    setMelhorPetShop(null);
+  };
+
   return (
     <div className="App">
-      <Formulario onSubmit={handleSubmit} />
+      <Formulario onSubmit={handleSubmit} onClear={handleClear} />
       {melhorPetShop && ( // Renderiza apenas se houver uma resposta
         <div className="melhor-petshop">
           <h3>Melhor PetShop</h3>
