@@ -70,7 +70,7 @@ export default class petShop {
                 throw new appError("Não há preços válidos disponíveis!", 404);
             }
 
-            
+
 
             // Encontrar o petshop com o menor preço e menor distância em caso de empate
             const bestPetShop = validPrices.reduce((prev, curr) => {

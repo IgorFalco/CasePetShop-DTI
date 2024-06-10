@@ -55,6 +55,8 @@ Este projeto consiste em uma aplicação web para encontrar o melhor petshop com
   - Calcular o custo total para cada petshop baseado no número de cães pequenos e grandes e no dia da semana.
   - Comparar os custos totais e, em caso de empate, escolher o petshop mais próximo.
 - **Testes:** Para rodar os testes basta digitar `npm start` no diretório `backend`.
+- **API de feriados:** Se utilizou uma API para encontrar os feriados nacionais, a fim de deixar o código mais robusto, em complemento, há um arquivo .json com os feriados municipais.
+- **dotEnv:** O arquivo `.env` foi colocado no repositório para facilitar a testagem da API.
 
 #### Frontend (React)
 
